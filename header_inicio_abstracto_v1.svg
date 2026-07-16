@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Delivery GO - Centro Operativo</title>
+  <desc id="desc">Encabezado abstracto oscuro con acentos azul eléctrico para DG CORE.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#02050B"/>
+      <stop offset="55%" stop-color="#071426"/>
+      <stop offset="100%" stop-color="#030814"/>
+    </linearGradient>
+
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="32%" stop-color="#D7E0EA"/>
+      <stop offset="64%" stop-color="#F7FAFF"/>
+      <stop offset="100%" stop-color="#7E8998"/>
+    </linearGradient>
+
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="55%" stop-color="#17B7FF"/>
+      <stop offset="100%" stop-color="#6CEBFF"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="78%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#82C5FF" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1200" height="300" rx="34" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="34" fill="url(#grid)"/>
+  <rect width="1200" height="300" rx="34" fill="url(#halo)"/>
+  <rect x="7" y="7" width="1186" height="286" rx="28"
+        fill="none" stroke="#0A84FF" stroke-opacity=".26" stroke-width="2"/>
+
+  <!-- Elementos abstractos de la derecha -->
+  <g opacity=".95">
+    <path d="M760 38 H1132" stroke="#0A84FF" stroke-width="2" stroke-opacity=".24"/>
+    <path d="M808 72 H1160" stroke="#1CC8FF" stroke-width="4" stroke-linecap="round" opacity=".42"/>
+    <path d="M842 112 H1120" stroke="#5BE6FF" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+    <path d="M790 232 H1150" stroke="#0A84FF" stroke-width="2" stroke-linecap="round" opacity=".22"/>
+
+    <path d="M918 22 L876 86 L908 80 L850 150 L884 142 L828 236"
+          fill="none" stroke="#E6FAFF" stroke-width="4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M918 22 L876 86 L908 80 L850 150 L884 142 L828 236"
+          fill="none" stroke="#17C8FF" stroke-width="15"
+          stroke-opacity=".18" filter="url(#glow)"/>
+
+    <rect x="964" y="112" width="150" height="76" rx="16"
+          fill="#081523" stroke="#1AAEFF" stroke-opacity=".35"/>
+    <text x="986" y="140" fill="#7CA9D8"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" font-weight="700" letter-spacing="2">ESTADO</text>
+    <circle cx="990" cy="164" r="7" fill="#42F29A"/>
+    <circle cx="990" cy="164" r="14" fill="#42F29A" opacity=".15"/>
+    <text x="1008" y="170" fill="#F5FAFF"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="22" font-weight="800">ONLINE</text>
+  </g>
+
+  <!-- Marca -->
+  <g transform="translate(62 58)">
+    <text x="0" y="0" fill="#7FB6FF"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18" font-weight="700" letter-spacing="4">DG CORE</text>
+
+    <text x="0" y="88" fill="url(#silver)"
+          font-family="Arial Black, Arial, Helvetica, sans-serif"
+          font-size="78" font-weight="900" font-style="italic"
+          letter-spacing="-3">DELIVERY</text>
+
+    <text x="352" y="88" fill="#06101A" stroke="#28C8FF" stroke-width="5"
+          paint-order="stroke fill"
+          font-family="Arial Black, Arial, Helvetica, sans-serif"
+          font-size="82" font-weight="900" font-style="italic"
+          letter-spacing="-4" filter="url(#glow)">GO</text>
+
+    <text x="3" y="136" fill="#D5E0EB"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="25" font-weight="700" letter-spacing="3">CENTRO OPERATIVO</text>
+
+    <text x="3" y="205" fill="#8197AE"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16" font-weight="700" letter-spacing="5">ENERGÍA • RAPIDEZ • CONTROL</text>
+  </g>
+
+  <!-- Línea inferior -->
+  <path d="M62 260 H704" stroke="url(#blue)" stroke-width="6"
+        stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M724 260 H1138" stroke="#0A84FF" stroke-width="2"
+        stroke-linecap="round" opacity=".35"/>
+</svg>
